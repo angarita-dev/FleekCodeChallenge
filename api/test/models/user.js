@@ -1,6 +1,6 @@
 let expect = require('chai').expect;
 
-let User = require('../../src/models/User');
+let User = require('../../src/models/user');
 
 describe('user model', () => {
   it('should be invalid if email is empty', (done) => {

@@ -1,6 +1,6 @@
 let expect = require('chai').expect;
 
-let Key = require('../../src/models/Key');
+let Key = require('../../src/models/key');
 
 describe('key model', () => {
   it('should be invalid if key is empty', (done) => {
