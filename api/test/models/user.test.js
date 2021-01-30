@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const dbHandler = require('../db-handler');
+const dbHandler = require('../util/db-handler');
 const { MongoMemoryServer } = require('mongodb-memory-server');
 const User = require('../../src/models/user');
 

@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
-const dbHandler = require('../db-handler');
-const { MongoMemoryServer } = require('mongodb-memory-server');
+const dbHandler = require('../util/db-handler');
+
 const Key = require('../../src/models/key');
 
 beforeAll(async () => await dbHandler.connect());
