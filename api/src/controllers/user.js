@@ -123,7 +123,7 @@ module.exports = {
   },
 
   // Returns keys owned by User
-  userKeys: (req, res) {
+  userKeys: (req, res) => {
     // Find user by email
     User.findById(req.user._id)
       .populate('keys', '-__v')
@@ -131,5 +131,3 @@ module.exports = {
       .catch(err => console.log(err))
   }
 }
-
-module.exports = router;

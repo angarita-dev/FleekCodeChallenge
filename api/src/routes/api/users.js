@@ -1,8 +1,9 @@
-const router = require('express').Router();
+const express = require("express");
+const router = express.Router();
 const passport = require("passport");
 
 // Controller methods
-const { userLogIn, userCreate, userKeys } = require('../controllers/user');
+const { userLogIn, userCreate, userKeys } = require('../../controllers/user');
 
 // @route POST api/users/register
 // @desc Register user

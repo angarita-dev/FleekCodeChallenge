@@ -2,7 +2,7 @@ const router = require('express').Router();
 const passport = require("passport");
 
 // Controller methods
-const { keyCreate, keyDelete } = require('../controllers/key');
+const { keyCreate, keyDelete } = require('../../controllers/key');
 
 // @route POST api/keys/create
 // @desc Create new API key
@@ -20,3 +20,4 @@ router.post("/remove",
   keyDelete
 );
 
+module.exports = router;
