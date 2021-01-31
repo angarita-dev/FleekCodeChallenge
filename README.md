@@ -76,3 +76,5 @@ npm start
 ```
 npm run-script monitor
 ```
+
+You can now access all the modules, for example you could head over to checkout the [client](http://localhost:4000/)
