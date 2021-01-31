@@ -6,6 +6,7 @@ import {
   Route
 } from 'react-router-dom';
 import Login from 'containers/Login';
+import SignUp from 'containers/SignUp';
 import { initialState, reducer } from 'store/UserStore';
 
 
@@ -28,9 +29,14 @@ const App = () => {
       }}
     >
       <Router>
-        <Route path="/login"
-          render={() => redirectIfAuthenticated(Login)}
-        />
+        <Switch>
+          <Route path="/login"
+            render={() => redirectIfAuthenticated(Login)}
+          />
+          <Route path="/signup"
+            render={() => redirectIfAuthenticated(SignUp)}
+          />
+        </Switch>
       </Router>
     </AuthContext.Provider>
   );
