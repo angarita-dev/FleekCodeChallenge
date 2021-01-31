@@ -1,6 +1,7 @@
+const mongoose = require('mongoose');
 const generateSafeId = require('generate-safe-id');
 // Validators
-const validateRemoveInput = require("../validators/key");
+const { validateRemoveInput } = require("../validators/key");
 
 // Models
 const Key = require('../models/key');
@@ -23,11 +24,12 @@ module.exports = {
         return User.findOneAndUpdate(
           { _id: req.user.id },
           { $push: { keys: key._id } }
-        )})
-      .then(newUser => {
-        res.status(201).json(key)
-      })
-      .catch(err => console.log(err));
+        )
+          .then(newUser => {
+            res.status(201).json(key)
+          })
+          .catch(err => console.log(err));
+      });
   },
 
   // Deletes key
