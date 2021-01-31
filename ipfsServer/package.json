@@ -10,6 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "ipfs-core": "^0.4.2"
+    "go-ipfs": "^0.7.0",
+    "ipfs-http-client": "^48.2.2",
+    "ipfsd-ctl": "^7.2.0"
   }
 }
