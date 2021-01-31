@@ -1,0 +1,28 @@
+{
+  "apps": [
+    {
+      "name": "client",
+      "cwd": "./client",
+      "script": "npm",
+      "args": "run-script run"
+    },
+    {
+      "name": "proxy",
+      "cwd": "./proxy",
+      "script": "npm",
+      "args": "start"
+    },
+    {
+      "name": "api",
+      "cwd": "./api",
+      "script": "npm",
+      "args": "start"
+    },
+    {
+      "name": "ipfsServer",
+      "cwd": "./ipfsServer",
+      "script": "npm",
+      "args": "start"
+    }
+  ]
+}
