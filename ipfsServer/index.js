@@ -1,13 +1,11 @@
-const IPFS = require('ipfs-core')
+const Ctl = require('ipfsd-ctl');
+const createClient = require('ipfs-http-client');
 
-IPFS.create(
-  {
-    "API": {
-      "HTTPHeaders": {
-        "Access-Control-Allow-Origin": [
-          "http://127.0.0.1:3000"
-        ]
-      }
-    }
-  }
-)
+Ctl.createController({
+  ipfsHttpModule: require('ipfs-http-client'),
+  ipfsBin: require('go-ipfs').path()
+})
+  .then(ipfsd => {
+    console.log('Spawned node');
+  })
+  .catch(err => console.log(err));
