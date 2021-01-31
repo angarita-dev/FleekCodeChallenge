@@ -1,9 +1,21 @@
-import logo from './logo.svg';
+import React from 'react'; 
+import { initialState, reducer } from 'store/UserStore';
 
-function App() {
+export const AuthContext = React.createContext();
+
+const App = () => {
+  const [state, dispatch] = React.useReducer(reducer, initialState);
+
   return (
-    <div className="App">
-    </div>
+    <AuthContext.Provider
+      value={{
+        state,
+        dispatch
+      }}
+    >
+      <div className="App">
+      </div>
+    </AuthContext.Provider>
   );
 }
 
