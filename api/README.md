@@ -1,5 +1,7 @@
 # API module
 
+This is the documentation for the `api` module you can check the whole challenge documentation [here](../README.md)
+
 > **NOTE :warning::** File `config/keys.js` holds the mongodb `uri` and application secret, this implementation is not secured but allows the project to be runned without setting up local db, this in production should be handled using `.env`
 
 This module serves an `express` API that connects to a `mongodb` remote database.
