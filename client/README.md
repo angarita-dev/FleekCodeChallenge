@@ -6,6 +6,27 @@ With this module you can create a User, login & manage your keys.
 
 > **NOTE :warning::** Because of time constraints this react app is made of desktop view, responsive components are to be implemented.
 
+## How to use
+
+> **NOTE :warning::** Even though this is an independent module, it makes requests to the `api` module, to run the whole assignment please check the overall documentation [here](../README.md)
+
+Install module dependencies
+```
+npm install
+```
+
+Build the module
+```
+npm run-script build
+```
+
+Start the server
+```
+npm run-script run
+```
+
+You can now check the [running client](http://localhost:4000)
+
 ## Screenshots
 
 ### Dashboard
