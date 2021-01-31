@@ -1,6 +1,21 @@
-# Getting Started with Create React App
+# Fleek Client
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the documentation for the `client` module you can check the whole challenge documentation [here](../README.md)
+
+With this module you can create a User, login & manage your keys.
+
+> **NOTE :warning::** Because of time constraints this react app is made of desktop view, responsive components are to be implemented.
+
+## Screenshots
+
+### Dashboard
+![dashboard](https://i.imgur.com/mZjOJDi.png)
+
+### Login screen
+![login](https://i.imgur.com/FHGUEKt.png)
+
+### Signup screen
+![signup](https://i.imgur.com/C9hvEiv.png)
 
 ## Available Scripts
 
