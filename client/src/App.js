@@ -1,14 +1,14 @@
 import React from 'react'; 
+import Login from 'containers/Login';
+import SignUp from 'containers/SignUp';
+import Dashboard from 'containers/Dashboard';
 import {
   BrowserRouter as Router,
   Switch,
-  Redirect,
-  Route
+  Route,
+  Redirect
 } from 'react-router-dom';
-import Login from 'containers/Login';
-import SignUp from 'containers/SignUp';
 import { initialState, reducer } from 'store/UserStore';
-
 
 export const AuthContext = React.createContext();
 
@@ -30,11 +30,28 @@ const App = () => {
     >
       <Router>
         <Switch>
+          <Route
+            exact
+            path="/"
+            render={() => {
+              return state.isAuthenticated ?
+                <Redirect to="/dashboard" /> :
+                <Redirect to="/login" />
+            }}
+          />
           <Route path="/login"
             render={() => redirectIfAuthenticated(Login)}
           />
           <Route path="/signup"
             render={() => redirectIfAuthenticated(SignUp)}
+          />
+          <Route
+            path="/dashboard"
+            render={() => {
+              return state.isAuthenticated ?
+                <Dashboard /> :
+                <Redirect to='/login' />;
+            }}
           />
         </Switch>
       </Router>
