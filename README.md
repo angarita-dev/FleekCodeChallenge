@@ -16,12 +16,14 @@ Table of contents:                       |
 ### How would you improve this assignment for a production ready solution (e.g., security,deployment)?
 
 For this assignment to be a production ready solution it requires a couple of important changes:
-Storing keys using secret `.env` for storing sensitive data like `api` secret for hashing passwords & jwt, and information like db `uri`. This is an easy task to implement but I choose so the assignment could be built and run by you guys much easier and without too much configuration.
-Improve `client <-> api` authentication, implementing a `Sessions` model and using cookies for storing session token instead of `localStorage`.
-Implementing `tls` for the `proxy` module, to secure the connection to the `ipfsServer`.
-Allow for horizontal scalability if needed, adding a `load balancing`.
-Even though the solution is split into loosely coupled modules, each module could be a `docker` component, making it easier for deployment.
-Add a `ci/cd ` and making more robust tests, even though there are tests in modules like `api` and `proxy`, more thorough tests are pending because of time constraints.
+- Storing keys using secret `.env` for storing sensitive data like `api` secret for hashing passwords & jwt, and information like db `uri`. This is an easy task to implement but I choose so the assignment could be built and run by you guys much easier and without too much configuration.
+
+- Improve `client <-> api` authentication, implementing a `Sessions` model and using cookies for storing session token instead of `localStorage`.
+- Implementing `tls` for the `proxy` module, to secure the connection to the `ipfsServer`.
+- Allow for horizontal scalability if needed, adding a `load balancing`.
+- Even though the solution is split into loosely coupled modules, each module could be a `docker` component, making it easier for deployment.
+- Add a `ci/cd ` and making more robust tests, even though there are tests in modules like `api` and `proxy`, more thorough tests are pending because of time constraints.
+- Add flash messages on `client` and overall `ui/ux` improvements.
 
 
 ### Describe IPFS and compare it to other protocols e.g., HTTP?
