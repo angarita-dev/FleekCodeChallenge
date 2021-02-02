@@ -10,7 +10,7 @@ Table of contents:                       |
 ----------------------                   |
 [Written questions](#written-questions)  |
 [How to use](#how-to-use)                |
-[Run tests](#run-tests)                  |
+[Run tests](#how-to-test)                |
 
 
 ## Written questions
