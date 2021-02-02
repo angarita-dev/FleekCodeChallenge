@@ -10,6 +10,7 @@ const {
 
 // Models
 const User = require('../models/user');
+const Requests = require('../models/request');
 
 module.exports = {
   // Logins user
@@ -126,7 +127,12 @@ module.exports = {
   userKeys: (req, res) => {
     // Find user by email
     User.findById(req.user._id)
-      .populate('keys', '-__v')
+      .populate({
+        path: 'keys',
+        populate: {
+          path: 'requests'
+        }
+      })
       .then(user => res.json({ keys: user.keys }))
       .catch(err => console.log(err))
   }

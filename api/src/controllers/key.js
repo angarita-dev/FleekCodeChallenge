@@ -6,6 +6,7 @@ const { validateRemoveInput } = require("../validators/key");
 // Models
 const Key = require('../models/key');
 const User = require('../models/user');
+const Request = require('../models/request');
 
 // Exports controller methods
 module.exports = {
