@@ -84,7 +84,7 @@ const Dashboard = () => {
         throw res;
       })
       .then(resJson => {
-        setData([ ...data, { _id: resJson._id, key: resJson.key }])
+        setData([ ...data, resJson])
       })
       .catch(err => console.log(err)); // Add error flashes
   }
@@ -118,7 +118,12 @@ const Dashboard = () => {
           <thead>
             <tr>
               <Th>
+              </Th>
+              <Th>
                 Key
+              </Th>
+              <Th>
+                Number of requests
               </Th>
               <Th>
                 Action
