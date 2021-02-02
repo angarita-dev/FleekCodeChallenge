@@ -13,8 +13,6 @@ Table of contents:                       |
 
 ## Models
 
-> **NOTE:** Models specified here are only for the implementation of the `api` module, the `proxy` module specifies other models like `requests`.
-
 <details>
   <summary>Expand to see model documentation</summary>
   
@@ -33,6 +31,16 @@ Table of contents:                       |
   `key`| Api key (unique) | `String` |
   `requestCount`| Times this key has been used (encrypted) | `String` |
   `owner`| User that created the key | `ObjectId` |
+  `requests`| Requests made using the key | `[ObjectId]` |
+  
+  ### Request
+
+  Field | Description | Type |
+  :----:|:-----------:|:----:|
+  `path`| IPFS HTTP endpoint requested | `String` |
+  `httpMethod`| HTTP method of the requested | `String` |
+  `startTime`| Time the initial request was made | `String` |
+  `apiKey`| key used to access the api | `ObjectId` |
 
 </details>
 
