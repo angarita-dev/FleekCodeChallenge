@@ -10,6 +10,7 @@ Table of contents:                       |
 ----------------------                   |
 [Written questions](#written-questions)  |
 [How to use](#how-to-use)                |
+[Run tests](#run-tests)                  |
 
 
 ## Written questions
@@ -81,3 +82,12 @@ npm run-script monitor
 ```
 
 You can now access all the modules, for example you could head over to checkout the [client](http://localhost:4000/)
+
+## How to test
+> This is an overview of how running tests looks like
+![tests](https://i.imgur.com/EcIFvOC.gif)
+
+Modules are tested using `jest`, to run the tests on all the modules simply run on the main folder
+```
+npm test
+```
