@@ -4,6 +4,7 @@ This challenge has been split in 4 well defined and loosely copuled modules to l
 - [Api](./api/README.md)
 - [Proxy](./proxy/README.md)
 - [Client](./client/README.md)
+- [ipfsServer](./ipfsServer/README.md)
 
 
 Table of contents:                       |
