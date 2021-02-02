@@ -13,7 +13,13 @@ const KeySchema = new Schema({
   owner: {
     type: Schema.Types.ObjectId,
     ref: "users"
-  }
+  },
+  requests: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'requests'
+    }
+  ]
 });
 
 module.exports = Key = mongoose.model('keys', KeySchema);
