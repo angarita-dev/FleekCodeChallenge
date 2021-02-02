@@ -30,7 +30,7 @@ You can now check the [running client](http://localhost:4000)
 ## Screenshots
 
 ### Dashboard
-![dashboard](https://i.imgur.com/mZjOJDi.png)
+![dashboard](https://i.imgur.com/z1XZyc9.png)
 
 ### Login screen
 ![login](https://i.imgur.com/FHGUEKt.png)
